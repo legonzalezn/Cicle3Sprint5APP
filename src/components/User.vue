@@ -61,7 +61,7 @@ import axios from "axios";
             console.log(this.$route.params)
             this.username = this.$route.params.userData.username
             this.id = this.$route.params.userData.id
-            axios.get(`http://cicle3sprint4unal.herokuapp.com/user/${this.id}`)
+            axios.get(`https://cicle3sprint4unal.herokuapp.com/user/${this.id}`)
                 .then(info => {
                     console.log(info)
                     this.userData = info.data
