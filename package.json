@@ -1,22 +1,21 @@
 {
-  "name": "cajero_app",
+  "name": "reservasapp",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "Camilo <andrescamilo468@gmail.com>",
+  "author": "legonzalezn <legonzalezn@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "npm run dev",
-    "build": "node build/build.js",
-    "heroku-prebuild": "npm install --dev"
+    "start": "node server.js",
+    "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "express": "^4.17.1",
+    "save-static": "^1.0.2",
     "serve-static": "^1.14.1",
     "vue": "^2.5.2",
-    "vue-router": "^3.4.9",
-    "webpack-dev-server": "^2.9.1"
+    "vue-router": "^3.4.9"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -50,7 +49,7 @@
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
-    "webpack": "^3.12.0",
+    "webpack": "^3.6.0",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.1",
     "webpack-merge": "^4.1.0"
